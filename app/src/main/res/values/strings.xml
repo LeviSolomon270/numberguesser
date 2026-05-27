@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NumberGuesser</string>
+    <string name="label_your_number">your number is </string>
+    <string name="btn_guess">Guess</string>
+    <string name="hint_enter_number">Enter your number</string>
+    <string name="msg_correct">Correct! You guessed it!</string>
+    <string name="msg_too_low">Too low! Try a higher number.</string>
+    <string name="msg_too_high">Too high! Try a lower number.</string>
+    <string name="msg_enter_number">Please enter a number first.</string>
+</resources>
