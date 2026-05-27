@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
     var randomNumber = 0
+    var numberOfGuesses = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             if (guessText.isNotEmpty()) {
                 val userGuess = guessText.toInt()
 
+                numberOfGuesses++
+
                 when {
                     userGuess == randomNumber -> {
                         textView.text = getString(R.string.msg_correct)
@@ -48,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                         textView.text = getString(R.string.msg_too_high)
                     }
                 }
-                // Clear the input after a guess
+
                 editText.text.clear()
             } else {
                 textView.text = getString(R.string.msg_enter_number)
